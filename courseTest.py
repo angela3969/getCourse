@@ -46,13 +46,12 @@ def getCourse(keyword):
     for element in elements:
         data_name = element.find_all("td")
         if(i>1):
-            #print(getCourseInfo(data_name))
+            print(getCourseInfo(data_name))
             courses[i]=getCourseInfo(data_name)
         i+=1
     return(courses)        
         
 def getCourseInfo(data):
-    print(data)
     courseId = data[0]
     courseName = data[2]
     professor = data[6]
