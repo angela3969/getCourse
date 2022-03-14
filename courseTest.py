@@ -49,7 +49,7 @@ def getCourse(keyword):
         data_name = element.find_all("td")
         if(i>1):
             #print(getCourseInfo(data_name))
-            courses[i]=getCourseInfo(data_name)
+            courses['course'+i]=getCourseInfo(data_name)
         i+=1
     return(courses)        
         
