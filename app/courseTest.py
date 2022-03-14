@@ -40,15 +40,15 @@ def getCourse(keyword):
     soup = BeautifulSoup(driver.page_source, "lxml")
         
     table = soup.find("table",class_="v-datatable v-table theme--light")
-    print(table)
+    #print(table)
     elements = table.find_all("tr")
-    print(elements)
+    #print(elements)
     i=0
     courses = {}
     for element in elements:
         data_name = element.find_all("td")
         if(i>1):
-            print(getCourseInfo(data_name))
+            #print(getCourseInfo(data_name))
             courses[i]=getCourseInfo(data_name)
         i+=1
     return(courses)        
