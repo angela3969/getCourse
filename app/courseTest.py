@@ -23,7 +23,7 @@ def getCourse(keyword):
     driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options
     #driver = webdriver.Chrome('./chromedriver')  # Optional argument, if not specified will search path.
 
-    driver.get('https://querycourse.ntust.edu.tw/querycourse/#/');
+    driver.get('https://querycourse.ntust.edu.tw/querycourse/#/')
 
     #time.sleep(5) # Let the user actually see something!
     ActionChains(driver).move_by_offset(1000, 100).click().perform() 
