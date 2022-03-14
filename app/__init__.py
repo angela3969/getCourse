@@ -15,4 +15,4 @@ def jobSearch():
     x1=insertValues['keyword']
     print(x1)
     courseTest.getCourse(x1)
-    return ((courseTest.getCourse(x1))[0])[0]
+    return courseTest.getCourse(x1)
