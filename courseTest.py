@@ -20,7 +20,7 @@ def getCourse(keyword):
     chrome_options.add_argument("--headless") #無頭模式
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
-    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
     #driver = webdriver.Chrome('./chromedriver')  # Optional argument, if not specified will search path.
 
     driver.get('https://querycourse.ntust.edu.tw/querycourse/#/')
