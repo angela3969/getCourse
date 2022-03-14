@@ -52,6 +52,7 @@ def getCourse(keyword):
     return(courses)        
         
 def getCourseInfo(data):
+    print(data)
     courseId = data[0]
     courseName = data[2]
     professor = data[6]
