@@ -39,12 +39,12 @@ def getCourse(keyword):
     table = soup.find("table",class_="v-datatable v-table theme--light")
     elements = table.find_all("tr")
     i=0
-    courses = []
+    courses = {}
     for element in elements:
         data_name = element.find_all("td")
         if(i>1):
             #print(getCourseInfo(data_name))
-            courses.append(getCourseInfo(data_name))
+            courses[i]=getCourseInfo(data_name)
         i+=1
     return(courses)        
         
