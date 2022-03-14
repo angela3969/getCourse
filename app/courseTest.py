@@ -40,7 +40,9 @@ def getCourse(keyword):
     soup = BeautifulSoup(driver.page_source, "lxml")
         
     table = soup.find("table",class_="v-datatable v-table theme--light")
+    print(table)
     elements = table.find_all("tr")
+    print(elements)
     i=0
     courses = {}
     for element in elements:
