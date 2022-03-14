@@ -7,3 +7,4 @@ xgboost==0.90
 requests
 bs4
 selenium
+lxml
