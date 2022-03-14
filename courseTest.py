@@ -8,6 +8,7 @@ Created on Sun Mar 13 14:31:41 2022
 
 import os
 import time
+import lxml
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.action_chains import ActionChains
