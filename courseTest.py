@@ -35,7 +35,7 @@ def getCourse(keyword):
     search_class.send_keys(keyword) 
     search_class.send_keys(Keys.ENTER)
 
-    #time.sleep(2)
+    time.sleep(2)
 
     soup = BeautifulSoup(driver.page_source, "lxml")
         
