@@ -59,4 +59,4 @@ def getCourseInfo(data):
     
     
     
-getCourse('python')
+#getCourse('python')
