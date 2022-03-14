@@ -51,6 +51,7 @@ def getCourse(keyword):
             #print(getCourseInfo(data_name))
             courses['course'+str(i)]=str(getCourseInfo(data_name))
         i+=1
+    print(courses)
     return(courses)        
         
 def getCourseInfo(data):
