@@ -31,6 +31,13 @@ def getCourse(keyword):
     #time.sleep(5) # Let the user actually see something!
     ActionChains(driver).move_by_offset(500, 400).click().perform() 
     time.sleep(2)
+    
+    search_class = driver.find_element_by_xpath('//input[@aria-label="課程名稱"]')
+    #//*[@id="app"]/div[12]/main/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[2]/div/div/div[1]/div/input#找到輸入帳號的位置 並先記錄之後要input
+    search_class.send_keys(keyword) 
+    search_class.send_keys(Keys.ENTER)
+
+    time.sleep(2)
 
     soup = BeautifulSoup(driver.page_source, "lxml")
         
