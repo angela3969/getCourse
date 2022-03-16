@@ -48,9 +48,12 @@ def getCourse(keyword):
     for element in elements:
         data_name = element.find_all("td")
         if(i>1):
-            #print(getCourseInfo(data_name))
-            courses['course'+str(i)]=str(getCourseInfo(data_name))
-        i+=1
+            if(data_name!='<td class="text-xs-center" colspan="12">無資料</td>'):
+                #print(getCourseInfo(data_name))
+                courses['course'+str(i)]=str(getCourseInfo(data_name))
+            i+=1
+        else:
+            courses['無資料']='無資料';
     print(courses)
     return(courses)        
         
