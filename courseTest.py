@@ -5,7 +5,6 @@ Created on Sun Mar 13 14:31:41 2022
 
 @author: angela
 """
- def getCourse(keyword):
      
 import os
 import time
